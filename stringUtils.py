@@ -6,3 +6,6 @@ def is_palindrome(s):
                         return False
 
         return True
+
+def remove_whitespace(s):
+	return ''.join(s.split()) 

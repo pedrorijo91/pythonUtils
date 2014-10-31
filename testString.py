@@ -14,4 +14,12 @@ assert is_palindrome("0") == True
 assert is_palindrome("999") == True
 assert is_palindrome("1221") == True
 
+assert remove_whitespace("") == ""
+assert remove_whitespace("abc") == "abc"
+assert remove_whitespace(" abc") == "abc"
+assert remove_whitespace(" abc ") == "abc"
+assert remove_whitespace(" ab c ") == "abc"
+assert remove_whitespace(" ab	cd ") == "abcd"
+assert remove_whitespace(" ab\tcd ") == "abcd"
+
 print "String testing successful"
