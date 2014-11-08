@@ -13,3 +13,13 @@ def list_roll_left(lst, element):
 def list_roll_right(lst, element):
         lst.pop()
         lst.insert(0, element)
+
+def delete_elems(list, elems):
+	y = []
+	y.extend(list)
+
+	for elem in elems:
+		if y.count(elem) > 0:
+			y.remove(elem)
+
+	return y

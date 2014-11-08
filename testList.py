@@ -14,4 +14,10 @@ list = [3,2,1]
 list_roll_right(list, 4)
 assert list == [4,3,2]
 
+list = [1,2,3,4,5,6]
+assert delete_elems(list, []) == list
+assert delete_elems(list, [3]) == [1,2,4,5,6]
+assert delete_elems(list, [3,1,5]) == [2,4,6]
+assert delete_elems(list, [7]) == [1,2,3,4,5,6]
+
 print "List testing successful"
